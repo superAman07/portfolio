@@ -25,7 +25,7 @@ const Hero = () => {
         </p>
         <div className="flex justify-center mb-8">
           <img
-            src="/path/to/your/photo.jpg"
+            src="https://media.licdn.com/dms/image/D4E03AQGKlMChKKwXaw/profile-displayphoto-shrink_400_400/0/1718311455681?e=1724889600&v=beta&t=ti6sMJJKdc6tSbY6AkxnPRgXbFmUeJJ3aT5Zg-dIP_I"
             alt="Aman Vishwakarma"
             className="rounded-full w-48 h-48 object-cover border-4 border-white"
           />

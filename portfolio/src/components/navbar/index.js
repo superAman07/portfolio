@@ -19,7 +19,7 @@ const Navbar = () => {
               alt="Aman Logo"
             />
             <span className="text-2xl font-semibold whitespace-nowrap dark:text-white">
-              AMAN VISHWAKARMA
+              AV
             </span>
           </div>
           <div className="block md:hidden">
