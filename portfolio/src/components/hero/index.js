@@ -18,12 +18,12 @@ const Hero = () => {
   return (
     <div className="h-screen w-full bg-gray-900 text-white flex flex-col justify-center items-center">
       <div className="container mx-auto text-center mt-36">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4">Hello, I&apos;m Aman Vishwakarma</h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">Hello, I&apos;m Aman Vishwakarma</h1>
         <h2 className="text-2xl md:text-3xl mb-8">A Passionate B.Tech Final Year Student</h2>
-        <p className="text-lg md:text-xl mb-8 px-4">
+        <p className="text-lg md:text-xl mb-8 px-3">
           I specialize in creating engaging content, solving problems, and building efficient solutions.
         </p>
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-8 pb-5">
           <img
             src="https://media.licdn.com/dms/image/D4E03AQGKlMChKKwXaw/profile-displayphoto-shrink_400_400/0/1718311455681?e=1724889600&v=beta&t=ti6sMJJKdc6tSbY6AkxnPRgXbFmUeJJ3aT5Zg-dIP_I"
             alt="Aman Vishwakarma"
@@ -31,8 +31,8 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 w-full text-center p-4 bg-white bg-opacity-75">
-        <p className="text-gray-900 animate-bounce cursor-pointer" onClick={scrollToContent}>
+      <div className="absolute bottom-0 left-0 w-full text-center p-2 bg-white bg-opacity-75">
+        <p className="text-gray-900 text-sm md:text-base animate-bounce cursor-pointer" onClick={scrollToContent}>
           Scroll down to see more
         </p>
       </div>
