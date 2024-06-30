@@ -3,12 +3,12 @@ import React, { useEffect, useRef } from "react";
 
 const Skills = () => {
   const skills = [
-    { name: "C/C++ STL", level: "Advanced", icon: "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png", percentage: 95 },
+    { name: "C/C++STL", level: "Advanced", icon: "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png", percentage: 95 },
     { name: "DSA", level: "Advanced", icon: "https://cdn.iconscout.com/icon/premium/png-256-thumb/data-structure-15-983190.png?f=webp", percentage: 90 },
     { name: "React", level: "Advanced", icon: "https://img.icons8.com/color/48/000000/react-native.png", percentage: 80 },
     { name: "Node.js", level: "Intermediate", icon: "https://img.icons8.com/color/48/000000/nodejs.png", percentage: 70 },
     { name: "JavaScript", level: "Intermediate", icon: "https://img.icons8.com/color/48/000000/javascript.png", percentage: 70 },
-    { name: "Tailwind CSS", level: "Intermediate", icon: "https://img.icons8.com/color/48/000000/tailwindcss.png", percentage: 70 },
+    { name: "Tailwind", level: "Intermediate", icon: "https://img.icons8.com/color/48/000000/tailwindcss.png", percentage: 70 },
     { name: "Bootstrap", level: "Intermediate", icon: "https://img.icons8.com/color/48/000000/bootstrap.png", percentage: 85 },
     { name: "Python", level: "Intermediate", icon: "https://img.icons8.com/color/48/000000/python.png", percentage: 70 },
     { name: "HTML", level: "Expert", icon: "https://img.icons8.com/color/48/000000/html-5.png", percentage: 90 },
