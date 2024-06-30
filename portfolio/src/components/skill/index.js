@@ -13,6 +13,8 @@ const Skills = () => {
     { name: "Python", level: "Intermediate", icon: "https://img.icons8.com/color/48/000000/python.png", percentage: 70 },
     { name: "HTML", level: "Expert", icon: "https://img.icons8.com/color/48/000000/html-5.png", percentage: 90 },
     { name: "CSS", level: "Expert", icon: "https://img.icons8.com/color/48/000000/css3.png", percentage: 85 },
+    { name: "PHP", level: "Intermediate", icon: "https://img.icons8.com/dusk/64/000000/php-logo.png", percentage: 75 },
+    { name: "DBMS", level: "Intermediate", icon: "https://img.icons8.com/dusk/64/000000/database-restore.png", percentage: 80 },
     { name: "VS Code", level: "Expert", icon: "https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png", percentage: 100 },
     { name: "Git", level: "Expert", icon: "https://img.icons8.com/color/48/000000/git.png", percentage: 80 },
     { name: "GitHub", level: "Expert", icon: "https://img.icons8.com/fluent/48/000000/github.png", percentage: 85 }, 
