@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="border-gray-200 rounded-3xl absolute top-6 bg-[#ce761f] bg-opacity-50 backdrop-blur-[2px] w-4/5 md:w-[60%] px-4">
+    <nav className="border-gray-200 rounded-3xl absolute top-6 bg-[#737373] bg-opacity-50 backdrop-blur-[2px] w-4/5 md:w-[60%] px-4">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -59,7 +59,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#about"
-                  className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 dark:text-white md:dark:text-blue-500"
+                  className="block py-2 px-3 text-[#d39d30] bg-blue-700 rounded md:bg-transparent md:text-[#d39d30] dark:text-white md:dark:text-blue-500"
                 >
                   About
                 </a>
@@ -67,7 +67,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#skills"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 md:dark:hover:text-white"
+                  className="block py-2 px-3 text-[#ffff] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#d39d30] dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 md:dark:hover:text-white"
                 >
                   Skills
                 </a>
@@ -75,7 +75,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#projects"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 md:dark:hover:text-white"
+                  className="block py-2 px-3 text-[#ffff] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#d39d30] dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 md:dark:hover:text-white"
                 >
                   Projects
                 </a>

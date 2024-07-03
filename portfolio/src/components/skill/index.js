@@ -56,7 +56,7 @@ const Skills = () => {
   };
 
   return (
-    <div id="skills" className="w-full min-h-screen bg-[#23c798] text-white py-16">
+    <div id="skills" className="w-full min-h-screen bg-[#A6A6A6] text-white py-16">
       <div className="container mx-auto px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-12">Tech Stack</h2>
         <div className="grid grid-cols-2 gridCol5 gap-8">
@@ -68,7 +68,7 @@ const Skills = () => {
             }
 
             .skill-item {
-              background-color: #374151;
+              background-color: #252426;
               padding: 1.5rem;
               border-radius: 1rem;
               box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
@@ -89,7 +89,7 @@ const Skills = () => {
               </div>
               <h3 className="text-2xl font-semibold mt-4">{skill.name}</h3>
               <p className="text-gray-400 mb-4">{skill.level}</p>
-              <div className="w-full bg-gray-700 rounded-full h-4 overflow-hidden mb-4">
+              <div className="w-full bg-[#094A73] rounded-full h-4 overflow-hidden mb-4">
                 <div
                   ref={addToRefs}
                   className="bg-blue-500 h-full rounded-full transition-width duration-1000 ease-in-out"
