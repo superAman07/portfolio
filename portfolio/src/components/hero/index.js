@@ -16,7 +16,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="h-screen w-full bg-gray-900 text-white flex flex-col justify-center items-center">
+    <div className="h-screen w-full bg-[#DAA520] text-white flex flex-col justify-center items-center">
       <div className="container mx-auto text-center mt-36">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Hello, I&apos;m Aman Vishwakarma</h1>
         <h2 className="text-2xl md:text-3xl mb-8">A Passionate B.Tech Final Year Student</h2>

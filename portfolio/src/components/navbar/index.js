@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="border-gray-200 rounded-3xl absolute top-6 bg-teal-500 bg-opacity-50 backdrop-blur-[2px] w-4/5 md:w-[60%] px-4">
+    <nav className="border-gray-200 rounded-3xl absolute top-6 bg-[#ce761f] bg-opacity-50 backdrop-blur-[2px] w-4/5 md:w-[60%] px-4">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-3 rtl:space-x-reverse">

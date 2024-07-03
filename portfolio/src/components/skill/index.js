@@ -56,7 +56,7 @@ const Skills = () => {
   };
 
   return (
-    <div id="skills" className="w-full min-h-screen bg-gray-900 text-white py-16">
+    <div id="skills" className="w-full min-h-screen bg-[#23c798] text-white py-16">
       <div className="container mx-auto px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-12">Tech Stack</h2>
         <div className="grid grid-cols-2 gridCol5 gap-8">
@@ -66,11 +66,23 @@ const Skills = () => {
                 grid-template-columns: repeat(5, minmax(0, 1fr));
               }
             }
+
+            .skill-item {
+              background-color: #374151;
+              padding: 1.5rem;
+              border-radius: 1rem;
+              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+              transition: transform 0.3s ease-in-out;
+            }
+
+            .skill-item:hover {
+              transform: scale(1.05);
+            }
           `}</style>
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center transform transition duration-500 hover:scale-105"
+              className="skill-item flex flex-col items-center justify-center text-center"
             >
               <div className="animate-bounce">
                 <img src={skill.icon} alt={`${skill.name} icon`} className="h-16 w-16 mb-4" />
