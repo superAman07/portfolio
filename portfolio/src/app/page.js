@@ -4,7 +4,7 @@ import Navbar from "../components/navbar";
 import About from "../components/about";
 import Hero from "../components/hero";
 import Projects from "../components/projects";
-import Footer from "../components/footer";
+import Footer from "../components/footer"; 
 export default function Home() {
   return (
     <div className='flex items-center flex-col'>
