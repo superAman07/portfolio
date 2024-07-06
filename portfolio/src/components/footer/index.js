@@ -1,7 +1,11 @@
 import React from "react";
 
 const index = ()=>{
-    return <p>i am footer</p>
+    return (
+        <div className="h-2/5 w-full bg-[#252426]">
+            
+        </div>
+    );
 }
 
 export default index;
