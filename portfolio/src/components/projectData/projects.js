@@ -2,13 +2,14 @@ import barknbond from "./images/barknbond.png";
 import investmentCalc from "./images/investmentCalc.png";
 import wotwebsite from "./images/wotwebsite.png"; 
 import filterSystem from "./images/filterSystem.png"; 
+import portfolio from "./images/portfolio.png"; 
 
 const projects = [
     {
       id: 1,
-      title: "Filter System",
-      imageUrl: filterSystem,
-      description: "I developed an advanced expense tracker using React, featuring a robust filter system for organizing expenses by date (DD/MM/YYYY). Inspired by platforms like Amazon and Flipkart, users can view and filter expenses based on purchase dates, providing insights into spending habits over time. Additionally, the interface includes a vertical filling bar for visualizing expense distribution, ensuring a comprehensive financial management tool.",
+      title: "Portfolio",
+      imageUrl: portfolio,
+      description: "My portfolio, created using Next.js and Tailwind CSS, showcases a blend of modern frontend technologies. It offers a responsive design, smooth navigation, and detailed project displays with preview options. Powered by Next.js for efficient rendering and Tailwind CSS for sleek styling, it highlights my skills in web development and design innovation.",
       previewUrl: "https://filtersystem.vercel.app/",  
     },
     {
@@ -31,6 +32,13 @@ const projects = [
       imageUrl: barknbond,
       description: "I created a unique dating platform designed exclusively for dogs using Bootstrap. This project combines my passion for web development with a playful twist, offering dogs a chance to find their pawfect match online. The website features a modern design, user-friendly interface, and responsive layout, ensuring an enjoyable experience for both canine users and their owners",
       previewUrl: "https://barknbond.netlify.app/",  
+    },
+    {
+      id: 1,
+      title: "Filter System",
+      imageUrl: filterSystem,
+      description: "I developed an advanced expense tracker using React, featuring a robust filter system for organizing expenses by date (DD/MM/YYYY). Inspired by platforms like Amazon and Flipkart, users can view and filter expenses based on purchase dates, providing insights into spending habits over time. Additionally, the interface includes a vertical filling bar for visualizing expense distribution, ensuring a comprehensive financial management tool.",
+      previewUrl: "https://filtersystem.vercel.app/",  
     },
   ];
   export default projects;

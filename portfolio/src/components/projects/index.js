@@ -1,11 +1,10 @@
-import React from "react"; 
+import React from "react";
 import projects from "../projectData/projects";
 import Image from "next/image";
 
 const Project = () => {
-    console.log("projects");
     return (
-        <div className="flex flex-col items-center bg-[#202426] p-8 min-h-screen">
+        <div id="projects" className="flex flex-col items-center bg-[#202426] p-8 min-h-screen">
             <h2 className="text-4xl text-[#D9D9D9] font-bold text-center mb-12">Projects</h2>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project, index) => (
@@ -27,6 +26,14 @@ const Project = () => {
                         <div className="p-4 text-[#D9D9D9]">
                             <h3 className="text-xl font-bold mb-2 text-[#9DA65D]">{project.title}</h3>
                             <p className="text-sm text-[#A6A6A6]">{project.description}</p>
+                        </div>
+                        {/* Button for small devices */}
+                        <div className="flex justify-center md:hidden mt-4">
+                            <a href={project.previewUrl} target="_blank" rel="noopener noreferrer">
+                                <button className="bg-[#252426] text-[#D9D9D9] py-2 px-4 rounded hover:bg-[#6C733D] transition-transform duration-300 transform hover:translate-y-[-2px]">
+                                    Preview
+                                </button>
+                            </a>
                         </div>
                     </div>
                 ))}

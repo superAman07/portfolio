@@ -3,7 +3,7 @@ import { FaGithub, FaTwitter, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#252426] w-full text-[#D9D9D9] py-8">
+        <footer id="footer" className="bg-[#252426] w-full text-[#D9D9D9] py-8">
             <div className="container mx-auto px-6 lg:px-8 flex flex-col items-center">
                 <div className="flex justify-center space-x-6 mb-4">
                     <a href="https://github.com/superAman07/" target="_blank" rel="noopener noreferrer" className="hover:text-[#6C733D] transition-colors duration-300">
