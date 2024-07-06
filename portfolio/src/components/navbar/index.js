@@ -1,6 +1,5 @@
 'use client'
 import React, { useState } from "react";
-import 'hamburgers/dist/hamburgers.min.css';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,13 +25,12 @@ const Navbar = () => {
           <div className="block md:hidden relative">
             <button
               onClick={toggleMenu}
-              className={`hamburger hamburger--emphatic ${isMenuOpen ? 'is-active' : ''}`}
-              type="button"
-              aria-label="Toggle Menu"
+              className="text-white focus:outline-none"
             >
-              <span className="hamburger-box">
-                <span className="hamburger-inner"></span>
-              </span>
+              <div className={`w-8 h-8 flex flex-col justify-center items-center transition duration-300 ${isMenuOpen ? 'transform rotate-180' : ''}`}>
+                <span className={`block w-4 h-0.5 bg-white rounded-full mb-1 transition duration-300 ${isMenuOpen ? 'rotate-45 translate-x-0.5 translate-y-0.5' : ''}`}></span>
+                <span className={`block w-4 h-0.5 bg-white rounded-full mb-1 transition duration-300 ${isMenuOpen ? '-rotate-45 translate-x-0.5 translate-y-0.5' : ''}`}></span>
+              </div>
             </button>
           </div>
           <div className={`md:flex ${isMenuOpen ? "block" : "hidden"} mt-4 md:mt-0`}>
