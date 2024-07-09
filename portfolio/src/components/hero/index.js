@@ -179,6 +179,15 @@ const Hero = () => {
         .bg-animate {
           animation: gradientAnimation 10s linear infinite alternate;
         }
+          @media (max-width: 768px) {
+          .circle {
+            bottom: -110px; /* Adjusted position for smaller devices */
+          }
+          .absolute.bottom-8 {
+            bottom: 4rem; /* Adjusted position of scroll indicator */
+          }
+        }
+          
       `}</style>
     </div>
   );
