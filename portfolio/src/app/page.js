@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className='flex items-center flex-col'>
       {/* Navbar */}
-      <Navbar />
+      {/* <Navbar /> */}
       {/* Hero */}
       <Hero />
       <div className="w-full flex justify-center mb-8">

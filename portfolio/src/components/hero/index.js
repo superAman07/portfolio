@@ -1,27 +1,50 @@
 'use client'
 import React, { useRef } from "react";
+import Navbar from "../navbar/index.js";  
 
 const Hero = () => {
   const contentRef = useRef(null);
 
   const scrollToContent = () => {
-    // Calculate the bottom of the viewport to scroll to
     const bottomOfViewport = window.innerHeight;
-
-    // Smooth scroll to the bottom of the viewport
     window.scrollTo({
       top: bottomOfViewport,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
   return (
-    <div className="h-screen w-full bg-[#252426] text-white flex flex-col justify-center items-center">
-      <div className="container mx-auto text-center mt-36">
-        <h1 className="text-4xl text-[#D9D9D9] md:text-6xl font-bold mb-4">Hello, I&apos;m Aman Vishwakarma</h1>
-        <h2 className="text-2xl text-[#D9D9D9] md:text-3xl mb-8">A Passionate B.Tech Final Year Student</h2>
-        <p className="text-lg text-[#D9D9D9] md:text-xl mb-8 px-3">
-          I specialize in creating engaging content, solving problems, and building efficient solutions.
+    <div className="relative h-screen pt-12 w-full bg-[#252426] text-white flex flex-col justify-center items-center">
+      {/* Animated circles */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+        <ul className="circles">
+          <li className="circle circle-1"></li>
+          <li className="circle circle-2"></li>
+          <li className="circle circle-3"></li>
+          <li className="circle circle-4"></li>
+          <li className="circle circle-5"></li>
+          <li className="circle circle-6"></li>
+          <li className="circle circle-7"></li>
+          <li className="circle circle-8"></li>
+          <li className="circle circle-9"></li>
+          <li className="circle circle-10"></li>
+        </ul>
+      </div>
+
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Content */}
+      <div className="container mt-10 pt-10 mx-auto text-center z-10">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-[#D9D9D9]">
+          Hello, I&apos;m Aman Vishwakarma
+        </h1>
+        <h2 className="text-2xl md:text-3xl mb-8 text-[#D9D9D9]">
+          A Passionate B.Tech Final Year Student
+        </h2>
+        <p className="text-lg md:text-xl mb-8 px-3 text-[#D9D9D9]">
+          I specialize in creating engaging content, solving problems, and
+          building efficient solutions.
         </p>
         <div className="flex justify-center mb-8 pb-5">
           <img
@@ -31,11 +54,132 @@ const Hero = () => {
           />
         </div>
       </div>
+
+      {/* Scroll indicator */}
       <div className="absolute bottom-0 left-0 w-full text-center p-2 bg-white bg-opacity-75">
-        <p className="text-gray-900 text-sm md:text-base animate-bounce cursor-pointer" onClick={scrollToContent}>
+        <p
+          className="text-gray-900 text-sm md:text-base animate-bounce cursor-pointer"
+          onClick={scrollToContent}
+        >
           Scroll down to see more
         </p>
       </div>
+
+      {/* CSS for animated circles and background animation */}
+      <style jsx>{`
+        .circle {
+          position: absolute;
+          display: block;
+          list-style: none;
+          width: 20px;
+          height: 20px;
+          background: rgba(255, 255, 255, 0.2);
+          animation: animate 25s linear infinite;
+          bottom: -150px;
+        }
+
+        .circle-1 {
+          left: 25%;
+          width: 80px;
+          height: 80px;
+          animation-delay: 0s;
+        }
+
+        .circle-2 {
+          left: 10%;
+          width: 20px;
+          height: 20px;
+          animation-delay: 2s;
+          animation-duration: 12s;
+        }
+
+        .circle-3 {
+          left: 70%;
+          width: 20px;
+          height: 20px;
+          animation-delay: 4s;
+        }
+
+        .circle-4 {
+          left: 40%;
+          width: 60px;
+          height: 60px;
+          animation-delay: 0s;
+          animation-duration: 18s;
+        }
+
+        .circle-5 {
+          left: 65%;
+          width: 20px;
+          height: 20px;
+          animation-delay: 0s;
+        }
+
+        .circle-6 {
+          left: 75%;
+          width: 110px;
+          height: 110px;
+          animation-delay: 3s;
+        }
+
+        .circle-7 {
+          left: 35%;
+          width: 150px;
+          height: 150px;
+          animation-delay: 7s;
+        }
+
+        .circle-8 {
+          left: 50%;
+          width: 25px;
+          height: 25px;
+          animation-delay: 15s;
+          animation-duration: 45s;
+        }
+
+        .circle-9 {
+          left: 20%;
+          width: 15px;
+          height: 15px;
+          animation-delay: 2s;
+          animation-duration: 35s;
+        }
+
+        .circle-10 {
+          left: 85%;
+          width: 150px;
+          height: 150px;
+          animation-delay: 0s;
+          animation-duration: 11s;
+        }
+
+        @keyframes animate {
+          0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+            border-radius: 0;
+          }
+          100% {
+            transform: translateY(-1000px) rotate(720deg);
+            opacity: 0;
+            border-radius: 50%;
+          }
+        }
+
+        /* Background Animation */
+        @keyframes gradientAnimation {
+          0% {
+            background-color: #737373;
+          }
+          100% {
+            background-color: #252426;
+          }
+        }
+
+        .bg-animate {
+          animation: gradientAnimation 10s linear infinite alternate;
+        }
+      `}</style>
     </div>
   );
 };
