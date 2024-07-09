@@ -14,7 +14,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative h-screen pt-12 w-full bg-[#252426] text-white flex flex-col justify-center items-center">
+    <div className="relative h-screen  w-full bg-[#252426] text-white flex flex-col justify-center items-center">
       {/* Animated circles */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <ul className="circles">
@@ -35,11 +35,11 @@ const Hero = () => {
       <Navbar />
 
       {/* Content */}
-      <div className="container mt-10 pt-10 mx-auto text-center z-10">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-[#D9D9D9]">
+      <div className="container mt-12 pt-10 mx-auto text-center z-10">
+        <h1 className="text-4xl md:text-6xl font-bold mb-2 text-[#D9D9D9]">
           Hello, I&apos;m Aman Vishwakarma
         </h1>
-        <h2 className="text-2xl md:text-3xl mb-8 text-[#D9D9D9]">
+        <h2 className="text-2xl pt-3 md:text-3xl mb-4 text-[#D9D9D9]">
           A Passionate B.Tech Final Year Student
         </h2>
         <p className="text-lg md:text-xl mb-8 px-3 text-[#D9D9D9]">
@@ -179,15 +179,6 @@ const Hero = () => {
         .bg-animate {
           animation: gradientAnimation 10s linear infinite alternate;
         }
-          @media (max-width: 768px) {
-          .circle {
-            bottom: -110px; /* Adjusted position for smaller devices */
-          }
-          .absolute.bottom-8 {
-            bottom: 4rem; /* Adjusted position of scroll indicator */
-          }
-        }
-          
       `}</style>
     </div>
   );
