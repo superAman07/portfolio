@@ -10,7 +10,7 @@ const projects = [
       title: "Portfolio",
       imageUrl: portfolio,
       description: "My portfolio, created using Next.js and Tailwind CSS, showcases a blend of modern frontend technologies. It offers a responsive design, smooth navigation, and detailed project displays with preview options. Powered by Next.js for efficient rendering and Tailwind CSS for sleek styling, it highlights my skills in web development and design innovation.",
-      previewUrl: "https://portfolio-website-hezis4jmz-aman-vishwakarmas-projects-0e786ab7.vercel.app/",  
+      previewUrl: "https://aman-vishwakarma.vercel.app/",  
     },
     {
       id: 2,
