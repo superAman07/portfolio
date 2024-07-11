@@ -64,8 +64,8 @@ const Hero = () => {
       </div> */}
 
 
-       
-      <div className="absolute bottom-0 left-0 w-full text-center p-2 bg-white bg-opacity-75">
+        
+      <div className="absolute bottom-0 left-0 w-full text-center p-2 bg-white bg-opacity-75 z-10">
         <p
           className="text-gray-900 text-sm md:text-base animate-bounce cursor-pointer"
           onClick={scrollToContent}
@@ -190,6 +190,9 @@ const Hero = () => {
           // after image typing content
         .font-smooth {
           -webkit-font-smoothing: antialiased;  
+        }
+        .z-10 {
+          z-index: 10;
         }
 
       `}</style>
