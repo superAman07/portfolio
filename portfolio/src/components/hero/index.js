@@ -1,6 +1,7 @@
 'use client'
 import React, { useRef } from "react";
-import Navbar from "../navbar/index.js";  
+import Navbar from "../navbar/index.js"; 
+import Typical from 'react-typical'; 
 
 const Hero = () => {
   const contentRef = useRef(null);
@@ -15,7 +16,6 @@ const Hero = () => {
 
   return (
     <div className="relative h-[100dvh]  w-full bg-[#252426] text-white flex flex-col justify-center items-center">
-      {/* Animated circles */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <ul className="circles">
           <li className="circle circle-1"></li>
@@ -35,7 +35,7 @@ const Hero = () => {
       <Navbar />
 
       {/* Content */}
-      <div className="container mt-12 pt-10 mx-auto text-center z-10">
+      <div className="container relative top-20 mx-auto text-center z-10">
         <h1 className="text-4xl md:text-6xl font-bold mb-2 text-[#D9D9D9]">
           Hello, I&apos;m Aman Vishwakarma
         </h1>
@@ -54,8 +54,17 @@ const Hero = () => {
           />
         </div>
       </div>
+      <div className="text-lg md:text-xl relative top-10 mb-8 px-3 text-[#D9D9D9] min-w-[250px]">
+        <Typical
+          steps={['Welcome to my portfolio!!!', 1500, 'Discover my projects-->', 1500, 'Learn more about me...!', 1500]}
+          loop={Infinity}
+          wrapper="p"
+          className="font-smooth"
+        />
+      </div>
 
-      {/* Scroll indicator */}
+
+       
       <div className="absolute bottom-0 left-0 w-full text-center p-2 bg-white bg-opacity-75">
         <p
           className="text-gray-900 text-sm md:text-base animate-bounce cursor-pointer"
@@ -64,8 +73,7 @@ const Hero = () => {
           Scroll down to see more
         </p>
       </div>
-
-      {/* CSS for animated circles and background animation */}
+ 
       <style jsx>{`
         .circle {
           position: absolute;
@@ -179,6 +187,11 @@ const Hero = () => {
         .bg-animate {
           animation: gradientAnimation 10s linear infinite alternate;
         }
+          // after image typing content
+        .font-smooth {
+          -webkit-font-smoothing: antialiased;  
+        }
+
       `}</style>
     </div>
   );

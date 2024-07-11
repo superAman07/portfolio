@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import Skill from "../components/skill";
 import Navbar from "../components/navbar";
@@ -5,6 +6,8 @@ import About from "../components/about";
 import Hero from "../components/hero";
 import Projects from "../components/projects";
 import Footer from "../components/footer"; 
+import smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();
 export default function Home() {
   return (
     <div className='flex items-center flex-col'>
