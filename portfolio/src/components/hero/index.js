@@ -1,7 +1,7 @@
 'use client'
 import React, { useRef } from "react";
 import Navbar from "../navbar/index.js"; 
-import Typical from 'react-typical'; 
+// import Typical from 'react-typical'; 
 
 const Hero = () => {
   const contentRef = useRef(null);
@@ -54,14 +54,14 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="text-lg md:text-xl relative top-10 mb-8 px-3 text-[#D9D9D9] min-w-[250px]">
+      {/* <div className="text-lg md:text-xl relative top-10 mb-8 px-3 text-[#D9D9D9] min-w-[250px]">
         <Typical
           steps={['Welcome to my portfolio!!!', 1500, 'Discover my projects-->', 1500, 'Learn more about me...!', 1500]}
           loop={Infinity}
           wrapper="p"
           className="font-smooth"
         />
-      </div>
+      </div> */}
 
 
        
