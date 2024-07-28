@@ -48,7 +48,7 @@ const Hero = () => {
         </p>
         <div className="flex justify-center mb-8 pb-5">
           <img
-            src="../hero/aman.jpg"
+            src="aman.jpg"
             alt="Aman Vishwakarma"
             className="rounded-full w-48 h-48 object-cover border-4 border-white"
           />
