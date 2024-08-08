@@ -21,7 +21,7 @@ export default function Home() {
           </div>
       </div>
       {/* About me */}
-      <About />
+      {/* <About /> */}
       {/* Skills */}
       <Skill />
       <div className="w-full flex justify-center mb-8">
