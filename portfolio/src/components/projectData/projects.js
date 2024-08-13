@@ -3,6 +3,7 @@ import investmentCalc from "./images/investmentCalc.png";
 import wotwebsite from "./images/wotwebsite.png"; 
 import filterSystem from "./images/filterSystem.png"; 
 import portfolio from "./images/portfolio.png"; 
+import pglife from "./images/pglife.png";
 
 const projects = [
     {
@@ -15,7 +16,7 @@ const projects = [
     {
       id: 2,
       title: "PGLife",
-      imageUrl: PGLife,
+      imageUrl: pglife,
       description: "PG Life is a dynamic web application for discovering and managing paying guest (PG) accommodations. Users can search for PGs by city, view detailed property listings with ratings, and manage their favorite properties. The platform features secure user authentication and displays testimonials from previous residents. Built with PHP and MySQL for the backend, and HTML, CSS, and Bootstrap for the frontend, PG Life offers a user-friendly experience for managing and exploring PG options.",
       previewUrl: "http://pglife-project.free.nf/",  
     },
