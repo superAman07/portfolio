@@ -14,10 +14,10 @@ const projects = [
     },
     {
       id: 2,
-      title: "investment Calculator",
-      imageUrl: investmentCalc,
-      description: "I developed an intuitive investment calculator using React, featuring essential fields such as CURRENT SAVINGS ($), YEARLY SAVINGS ($), EXPECTED INTEREST (%, PER YEAR), and INVESTMENT DURATION. This tool empowers users to plan and visualize their financial goals effectively, providing accurate projections based on their input parameters.",
-      previewUrl: "https://investment-calculator-d9yx5u5rc.vercel.app/",
+      title: "PGLife",
+      imageUrl: PGLife,
+      description: "PG Life is a dynamic web application for discovering and managing paying guest (PG) accommodations. Users can search for PGs by city, view detailed property listings with ratings, and manage their favorite properties. The platform features secure user authentication and displays testimonials from previous residents. Built with PHP and MySQL for the backend, and HTML, CSS, and Bootstrap for the frontend, PG Life offers a user-friendly experience for managing and exploring PG options.",
+      previewUrl: "http://pglife-project.free.nf/",  
     },
     {
       id: 3,
@@ -28,13 +28,20 @@ const projects = [
     },
     {
       id: 4,
+      title: "investment Calculator",
+      imageUrl: investmentCalc,
+      description: "I developed an intuitive investment calculator using React, featuring essential fields such as CURRENT SAVINGS ($), YEARLY SAVINGS ($), EXPECTED INTEREST (%, PER YEAR), and INVESTMENT DURATION. This tool empowers users to plan and visualize their financial goals effectively, providing accurate projections based on their input parameters.",
+      previewUrl: "https://investment-calculator-d9yx5u5rc.vercel.app/",
+    },
+    {
+      id: 5,
       title: "barknbond",
       imageUrl: barknbond,
       description: "I created a unique dating platform designed exclusively for dogs using Bootstrap. This project combines my passion for web development with a playful twist, offering dogs a chance to find their pawfect match online. The website features a modern design, user-friendly interface, and responsive layout, ensuring an enjoyable experience for both canine users and their owners",
       previewUrl: "https://barknbond.netlify.app/",  
     },
     {
-      id: 1,
+      id: 6,
       title: "Filter System",
       imageUrl: filterSystem,
       description: "I developed an advanced expense tracker using React, featuring a robust filter system for organizing expenses by date (DD/MM/YYYY). Inspired by platforms like Amazon and Flipkart, users can view and filter expenses based on purchase dates, providing insights into spending habits over time. Additionally, the interface includes a vertical filling bar for visualizing expense distribution, ensuring a comprehensive financial management tool.",
