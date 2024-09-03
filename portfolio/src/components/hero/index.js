@@ -65,9 +65,9 @@ const Hero = () => {
 
 
         
-      <div className="absolute bottom-0 left-0 w-full text-center p-2 bg-white bg-opacity-75 z-10">
+      <div className="absolute bottom-0 left-0 w-full text-center p-2 bg-opacity-75 z-10">
         <p
-          className="text-gray-900 text-sm md:text-base animate-bounce cursor-pointer"
+          className="text-[#D9D9D9] text-sm md:text-base animate-bounce cursor-pointer"
           onClick={scrollToContent}
         >
           Scroll down to see more
