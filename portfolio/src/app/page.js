@@ -3,9 +3,9 @@ import Skill from "../components/skill";
 import Hero from "../components/hero";
 import Projects from "../components/projects";
 import Footer from "../components/footer"; 
-import smoothscroll from 'smoothscroll-polyfill';
+// import smoothscroll from 'smoothscroll-polyfill';
 import Contact from "../components/contact/contact";
-smoothscroll.polyfill();
+// smoothscroll.polyfill();
 export default function Home() {
   return (
     <div className='flex items-center flex-col'>
