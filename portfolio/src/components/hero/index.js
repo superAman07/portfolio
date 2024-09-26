@@ -1,21 +1,22 @@
-'use client'
+'use client';
 import React, { useRef } from "react";
 import Navbar from "../navbar/index.js"; 
-// import Typical from 'react-typical'; 
 
 const Hero = () => {
   const contentRef = useRef(null);
 
   const scrollToContent = () => {
-    const bottomOfViewport = window.innerHeight;
-    window.scrollTo({
-      top: bottomOfViewport,
-      behavior: "smooth",
-    });
+    if (typeof window !== "undefined") { // Check if window is defined
+      const bottomOfViewport = window.innerHeight;
+      window.scrollTo({
+        top: bottomOfViewport,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
-    <div className="relative h-[100vh] md:h-[calc(var(--vh, 1vh)*100)] w-full bg-[#252426] text-white flex flex-col justify-center items-center">
+    <div className="relative h-[100dvh] w-full bg-[#252426] text-white flex flex-col justify-center items-center">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <ul className="circles">
           <li className="circle circle-1"></li>
@@ -54,17 +55,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      {/* <div className="text-lg md:text-xl relative top-10 mb-8 px-3 text-[#D9D9D9] min-w-[250px]">
-        <Typical
-          steps={['Welcome to my portfolio!!!', 1500, 'Discover my projects-->', 1500, 'Learn more about me...!', 1500]}
-          loop={Infinity}
-          wrapper="p"
-          className="font-smooth"
-        />
-      </div> */}
 
-
-        
       <div className="absolute bottom-0 left-0 w-full text-center p-2 bg-opacity-75 z-10">
         <p
           className="text-[#D9D9D9] text-sm md:text-base animate-bounce cursor-pointer"
@@ -73,7 +64,7 @@ const Hero = () => {
           Scroll down to see more
         </p>
       </div>
- 
+
       <style jsx>{`
         .circle {
           position: absolute;
@@ -174,27 +165,12 @@ const Hero = () => {
           }
         }
 
-        /* Background Animation */
-        @keyframes gradientAnimation {
-          0% {
-            background-color: #737373;
-          }
-          100% {
-            background-color: #252426;
-          }
-        }
-
-        .bg-animate {
-          animation: gradientAnimation 10s linear infinite alternate;
-        }
-          // after image typing content
         .font-smooth {
           -webkit-font-smoothing: antialiased;  
         }
         .z-10 {
           z-index: 10;
         }
-
       `}</style>
     </div>
   );
