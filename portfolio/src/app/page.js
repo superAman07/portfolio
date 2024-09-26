@@ -1,25 +1,50 @@
-'use client' 
-import Skill from "../components/skill"; 
-import Hero from "../components/hero";
-import Projects from "../components/projects";
-import Footer from "../components/footer"; 
-import Dot from "@/components/Dots";
-// import smoothscroll from 'smoothscroll-polyfill';
-import Contact from "../components/contact/contact";
-// smoothscroll.polyfill();
+'use client'
+import { Suspense, lazy } from "react";
+const Hero = lazy(() => import("../components/hero"));
+const Projects = lazy(() => import("../components/projects"));
+const Footer = lazy(() => import("../components/footer"));
+const Dot = lazy(() => import("@/components/Dots"));
+const Contact = lazy(() => import("../components/contact/contact"));
+const Skill = lazy(() => import("../components/skill"));
+
 export default function Home() {
   return (
-    <div className='flex items-center flex-col'>
-      <Hero />
-        
-      <Dot/>
-      <Skill />
-      <Dot/>
-      <Projects/>
-      <Dot/>
-      <Contact/>
-      <Dot/>
-      <Footer/>
+    <div className='flex items-center flex-col'> 
+      <Suspense fallback={<div>Loading Hero...</div>}>
+        <Hero />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Dots...</div>}>
+        <Dot />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Skill...</div>}>
+        <Skill />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Dots...</div>}>
+        <Dot />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Projects...</div>}>
+        <Projects />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Dots...</div>}>
+        <Dot />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Contact...</div>}>
+        <Contact />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Dots...</div>}>
+        <Dot />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading Footer...</div>}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }
