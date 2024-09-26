@@ -15,7 +15,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-[100dvh] md:h-[100dvh] w-full bg-[#252426] text-white flex flex-col justify-center items-center">
+    <div className="relative h-[100vh] md:h-[100dvh] w-full bg-[#252426] text-white flex flex-col justify-center items-center">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <ul className="circles">
           <li className="circle circle-1"></li>
