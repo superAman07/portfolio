@@ -23,6 +23,7 @@ const Skills = () => {
     { name: "VS Code", level: "Expert", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg", percentage: 100 },
     { name: "ChatGPT", level: "Intermediate", icon: "https://freelogopng.com/images/all_img/1681038242chatgpt-logo-png.png", percentage: 100 },
     { name: "Photoshop", level: "Intermediate", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg", percentage: 70 },
+    { name: "MUI", level: "Intermediate", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg", percentage: 90 }
   ];
 
   const skillRefs = useRef([]);
