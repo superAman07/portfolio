@@ -22,16 +22,18 @@ const Hero = () => {
     <div className="relative h-[100dvh] w-full bg-[#252426] text-white flex flex-col justify-center items-center">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <ul className="circles">
-          <li className="circle circle-1"></li>
-          <li className="circle circle-2"></li>
-          <li className="circle circle-3"></li>
-          <li className="circle circle-4"></li>
-          <li className="circle circle-5"></li>
-          <li className="circle circle-6"></li>
-          <li className="circle circle-7"></li>
-          <li className="circle circle-8"></li>
-          <li className="circle circle-9"></li>
-          <li className="circle circle-10"></li>
+          {[...Array(10)].map((_, index) => (
+            <li
+              key={index}
+              className={`circle circle-${index + 1}`}
+              style={{
+                animationDuration: `${Math.random() * 10 + 15}s`, // Random duration between 15s and 25s
+                left: `${Math.random() * 100}%`, // Random horizontal positioning
+                width: `${Math.random() * 20 + 10}px`, // Random width between 10px and 30px
+                height: `${Math.random() * 20 + 10}px`, // Random height between 10px and 30px
+              }}
+            ></li>
+          ))}
         </ul>
       </div>
  
@@ -84,40 +86,33 @@ const Hero = () => {
       </div>
 
       <style jsx>{`
+        .circles {
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+
         .circle {
           position: absolute;
-          display: block;
           list-style: none;
-          width: 20px;
-          height: 20px;
           background: rgba(255, 255, 255, 0.2);
           animation: animate 25s linear infinite;
           bottom: -150px;
+          border-radius: 50%;
         }
-
-        /* Circle styles */
-        /* Add your existing circle styles here */
 
         @keyframes animate {
           0% {
             transform: translateY(0) rotate(0deg);
             opacity: 1;
-            border-radius: 0;
           }
           100% {
             transform: translateY(-1000px) rotate(720deg);
             opacity: 0;
-            border-radius: 50%;
           }
         }
-
-        .font-smooth {
-          -webkit-font-smoothing: antialiased;  
-        }
-        .z-10 {
-          z-index: 10;
-        }
       `}</style>
+
     </div>
   );
 };
