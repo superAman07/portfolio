@@ -1,3 +1,4 @@
+'use client'
 export default function IntroButton({ name, href }) {
   return (
     <div className="flex justify-center items-center relative pl-1 pb-5">

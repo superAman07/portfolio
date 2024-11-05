@@ -1,3 +1,4 @@
+'use client'
 import barknbond from "./images/barknbond.png";
 import investmentCalc from "./images/investmentCalc.png";
 import wotwebsite from "./images/wotwebsite.png"; 

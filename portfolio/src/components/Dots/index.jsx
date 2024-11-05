@@ -1,3 +1,4 @@
+'use client'
 const Dot = function(){
     return (
         <div className="w-full flex justify-center mb-8">
