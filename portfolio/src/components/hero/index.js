@@ -1,15 +1,13 @@
 'use client';
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { motion } from 'framer-motion';
 import Navbar from "../navbar/index.js";  
 import Image from "next/image";
 import ProfilePic from "../../../public/image.png";
 
 const Hero = () => {
-  const contentRef = useRef(null);
-
   const scrollToContent = () => {
-    if (typeof window !== "undefined") { // Check if window is defined
+    if (typeof window !== "undefined") {  
       const bottomOfViewport = window.innerHeight;
       window.scrollTo({
         top: bottomOfViewport,
@@ -22,21 +20,16 @@ const Hero = () => {
     <div className="relative h-[100dvh] w-full bg-[#252426] text-white flex flex-col justify-center items-center">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <ul className="circles">
-          {[...Array(10)].map((_, index) => (
-            <li
-              key={index}
-              className={`circle circle-${index + 1}`}
-              style={{
-                animationDuration: `${Math.random() * 10 + 15}s`, // Random duration between 15s and 25s
-                left: `${Math.random() * 100}%`, // Random horizontal positioning
-                width: `${Math.random() * 20 + 10}px`, // Random width between 10px and 30px
-                height: `${Math.random() * 20 + 10}px`, // Random height between 10px and 30px
-              }}
-            ></li>
-          ))}
+          {/* Define static circle properties */}
+          <li className="circle circle-1" style={{ left: "10%", width: "15px", height: "15px", animationDuration: "25s" }}></li>
+          <li className="circle circle-2" style={{ left: "20%", width: "20px", height: "20px", animationDuration: "20s" }}></li>
+          <li className="circle circle-3" style={{ left: "30%", width: "25px", height: "25px", animationDuration: "30s" }}></li>
+          <li className="circle circle-4" style={{ left: "40%", width: "10px", height: "10px", animationDuration: "35s" }}></li>
+          <li className="circle circle-5" style={{ left: "50%", width: "18px", height: "18px", animationDuration: "40s" }}></li>
+          {/* Add more circles as needed with fixed styles */}
         </ul>
       </div>
- 
+
       <Navbar />
  
       <div className="container relative top-20 mx-auto text-center z-10"> 
@@ -71,6 +64,7 @@ const Hero = () => {
             src={ProfilePic}
             alt="Aman Vishwakarma"
             className="rounded-full w-48 h-48 object-cover border-4 border-white"
+            priority // Keep this for LCP optimization
           />
         </div>
       </div>
