@@ -1,7 +1,8 @@
 'use client'
 import barknbond from "./images/barknbond.png";
 import investmentCalc from "./images/investmentCalc.png";
-import wotwebsite from "./images/wotwebsite.png"; 
+// import wotwebsite from "./images/wotwebsite.png"; 
+import todo from "./images/todo.png"; 
 import filterSystem from "./images/filterSystem.png"; 
 import portfolio from "./images/portfolio.png"; 
 import pglife from "./images/pglife.png";
@@ -39,10 +40,10 @@ const projects = [
     },
     {
       id: 5,
-      title: "WOT website",
-      imageUrl: wotwebsite,
-      description: "I crafted a dynamic e-commerce platform using HTML, CSS, and JavaScript, offering a seamless user experience with full functionality. The product pages showcase multiple images per product, allowing users to explore different varieties effortlessly using an intuitive slider. This project reflects my commitment to creating engaging web solutions tailored for optimal user interaction and satisfaction, inspired by my passion for enhancing digital experiences.",
-      previewUrl: "https://wotwebsite.vercel.app/",
+      title: "Todo",
+      imageUrl: todo,
+      description: "A modern Todo List app built with React and Tailwind CSS, featuring task management with add, edit, delete, and complete functionality. Includes category-based filters for better organization. Fully responsive and showcases clean, reusable code with React hooks. Technologies: React, Tailwind CSS, JavaScript and Features: Task management and Category filters",
+      previewUrl: "https://todo-278t.vercel.app/",
     },
     {
       id: 6,
