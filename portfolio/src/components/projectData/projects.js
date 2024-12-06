@@ -1,7 +1,6 @@
 'use client'
 import barknbond from "./images/barknbond.png";
-import investmentCalc from "./images/investmentCalc.png";
-// import wotwebsite from "./images/wotwebsite.png"; 
+import investmentCalc from "./images/investmentCalc.png"; 
 import todo from "./images/todo.png"; 
 import filterSystem from "./images/filterSystem.png"; 
 import portfolio from "./images/portfolio.png"; 

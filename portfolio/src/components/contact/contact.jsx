@@ -28,21 +28,19 @@ const Contact = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            //   viewport={{ once: true }} // This ensures the animation happens only once when the element first comes into view
             className="min-h-screen w-full flex flex-col justify-center items-center bg-gray-100 p-6"
         >
             <div className="container mx-auto justify-center flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden">
-                {/* Left Side - Contact Form */}
+             
                 <motion.div
                     className="md:w-1/2 p-8"
                     initial={{ x: -100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    viewport={{ once: true }} // Animation triggers once when entering the viewport
+                    viewport={{ once: true }} 
                 >
                     <h2 className="text-2xl font-bold mb-6 text-gray-800">Contact Me</h2>
-                    <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-                        {/* Name Field */}
+                    <form onSubmit={handleSubmit} className="flex flex-col space-y-4"> 
                         <div className="flex flex-col">
                             <label htmlFor="name" className="mb-2 text-gray-700">
                                 Name
@@ -58,8 +56,7 @@ const Contact = () => {
                                 required
                             />
                         </div>
-
-                        {/* Email Field */}
+ 
                         <div className="flex flex-col">
                             <label htmlFor="email" className="mb-2 text-gray-700">
                                 Email
@@ -75,8 +72,7 @@ const Contact = () => {
                                 required
                             />
                         </div>
-
-                        {/* Message Field */}
+ 
                         <div className="flex flex-col">
                             <label htmlFor="message" className="mb-2 text-gray-700">
                                 Message
@@ -91,23 +87,17 @@ const Contact = () => {
                                 required
                             />
                         </div>
-
-                        {/* Submit Button */}
                         <Button name="Send" />
                     </form>
                 </motion.div>
-
-                {/* Right Side - Contact Information */}
                 <motion.div
                     className="md:w-1/2 bg-[#252525] text-white p-8 flex flex-col justify-center items-center"
                     initial={{ x: 100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    viewport={{ once: true }} // Animation triggers once when entering the viewport
+                    viewport={{ once: true }} 
                 >
                     <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
-
-                    {/* Social Links */}
                     <div className="flex justify-center space-x-6 mb-6">
                         <a
                             href="https://github.com/superAman07/"
@@ -156,7 +146,7 @@ const Contact = () => {
                             />
                         </a>
                         <a
-                            href="tel:+918922810977" // Replace with your phone number
+                            href="tel:+918922810977"  
                             className="hover:text-[#6C733D] transition-colors duration-300"
                         >
                             <img
@@ -165,10 +155,9 @@ const Contact = () => {
                                 className="h-8 w-8"
                             />
                         </a>
-
-                        {/* WhatsApp Link */}
+ 
                         <a
-                            href="https://wa.me/+918922810977" // Replace with your WhatsApp number (including country code, without + sign)
+                            href="https://wa.me/+918922810977" 
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-[#6C733D] transition-colors duration-300"
@@ -180,8 +169,7 @@ const Contact = () => {
                             />
                         </a>
                     </div>
-
-                    {/* Resume Button */}
+ 
                     <Button name="Resume" href="/Resume.pdf" />
                 </motion.div>
             </div>

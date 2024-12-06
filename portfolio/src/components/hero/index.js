@@ -19,14 +19,12 @@ const Hero = () => {
   return (
     <div className="relative h-[100dvh] w-full bg-[#252426] text-white flex flex-col justify-center items-center">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-        <ul className="circles">
-          {/* Define static circle properties */}
+        <ul className="circles"> 
           <li className="circle circle-1" style={{ left: "10%", width: "15px", height: "15px", animationDuration: "25s" }}></li>
           <li className="circle circle-2" style={{ left: "20%", width: "20px", height: "20px", animationDuration: "20s" }}></li>
           <li className="circle circle-3" style={{ left: "30%", width: "25px", height: "25px", animationDuration: "30s" }}></li>
           <li className="circle circle-4" style={{ left: "40%", width: "10px", height: "10px", animationDuration: "35s" }}></li>
           <li className="circle circle-5" style={{ left: "50%", width: "18px", height: "18px", animationDuration: "40s" }}></li>
-          {/* Add more circles as needed with fixed styles */}
         </ul>
       </div>
 
@@ -64,12 +62,11 @@ const Hero = () => {
             src={ProfilePic}
             alt="Aman Vishwakarma"
             className="rounded-full w-48 h-48 object-cover border-4 border-white"
-            priority // Keep this for LCP optimization
+            priority  
           />
         </div>
       </div>
-
-      {/* Scroll Down Link */}
+ 
       <div className="absolute bottom-0 left-0 w-full text-center p-2 bg-opacity-75 z-10">
         <p
           className="text-[#D9D9D9] text-sm md:text-base animate-bounce cursor-pointer"
