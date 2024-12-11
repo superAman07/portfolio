@@ -84,16 +84,14 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
-  // Handle sticky navbar and background color on scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setIsSticky(true);
-        setIsScrolled(true);  // Set navbar background to solid
+        setIsScrolled(true);  
       } else {
         setIsSticky(false);
-        setIsScrolled(false); // Keep transparent background on first page
+        setIsScrolled(false);  
       }
     };
 
