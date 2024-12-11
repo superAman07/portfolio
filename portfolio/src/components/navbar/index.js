@@ -57,14 +57,6 @@ const Navbar = () => {
           </div>
           <div className={`md:flex ${isMenuOpen ? "block" : "hidden"} mt-4 md:mt-0`}>
             <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-white">
-              // <li>
-              //   <button
-              //     onClick={() => scrollToSection('about')}
-              //     className="block py-2 px-3 text-[#d39d30] bg-blue-700 rounded md:bg-transparent md:text-[#d39d30] hover:bg-gray-700 transition duration-300"
-              //   >
-              //     About
-              //   </button>
-              // </li>
               <li>
                 <button
                   onClick={() => scrollToSection('skills')}
