@@ -9,7 +9,10 @@ const Project = () => {
             <h2 className="text-4xl text-[#D9D9D9] font-bold text-center mb-12">Projects</h2>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project, index) => (
-                    <div key={project.id} className="bg-[#252426] rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div 
+                        key={project.id} 
+                        className="bg-[#252426] rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                    >
                         <div className="relative group">
                             <Image 
                                 src={project.imageUrl} 
@@ -18,21 +21,47 @@ const Project = () => {
                                 width={600} 
                                 height={400} 
                             />
-                            <a href={project.previewUrl} target="_blank" rel="noopener noreferrer" className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                <button className="bg-[#252426] text-[#D9D9D9] py-2 px-4 rounded hover:bg-[#6C733D] transition-transform duration-300 transform hover:translate-y-[-2px]">
-                                    Preview
-                                </button>
-                            </a>
+                            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                <div className="flex flex-row space-x-4">
+                                    <a 
+                                        href={project.previewUrl} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                    >
+                                        <button 
+                                            className="bg-[#252426] text-[#D9D9D9] py-2 px-4 rounded hover:bg-[#6C733D] transition-transform duration-300 transform hover:translate-y-[-2px]"
+                                        >
+                                            Preview
+                                        </button>
+                                    </a>
+                                    <a 
+                                        href={project.githubUrl} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                    >
+                                        <button 
+                                            className="bg-[#252426] text-[#D9D9D9] py-2 px-4 rounded hover:bg-[#6C733D] transition-transform duration-300 transform hover:translate-y-[-2px]"
+                                        >
+                                            GitHub
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div className="p-4 text-[#D9D9D9]">
                             <h3 className="text-xl font-bold mb-2 text-[#9DA65D]">{project.title}</h3>
                             <p className="text-sm text-[#A6A6A6]">{project.description}</p>
                         </div>
                         {/* Button for small devices */}
-                        <div className="flex justify-center md:hidden mt-4">
+                        <div className="flex justify-center md:hidden mt-4 space-x-4">
                             <a href={project.previewUrl} target="_blank" rel="noopener noreferrer">
                                 <button className="bg-[#252426] text-[#D9D9D9] py-2 px-4 rounded hover:bg-[#6C733D] transition-transform duration-300 transform hover:translate-y-[-2px]">
                                     Preview
+                                </button>
+                            </a>
+                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                                <button className="bg-[#252426] text-[#D9D9D9] py-2 px-4 rounded hover:bg-[#6C733D] transition-transform duration-300 transform hover:translate-y-[-2px]">
+                                    GitHub
                                 </button>
                             </a>
                         </div>
