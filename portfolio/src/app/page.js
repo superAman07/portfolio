@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 const Hero = dynamic(() => import('../components/hero'), {
   loading: () => <LoadingFallback />,
   ssr:false,
-});
+}); 
 const Projects = dynamic(() => import('../components/projects'), {
   loading: () => <LoadingFallback />,
   ssr:false,
@@ -35,7 +35,7 @@ const LoadingFallback = () => (
 export default function Home() {
   return (
     <div className='flex items-center flex-col'> 
-      <Hero />
+      <Hero /> 
       <Dot />
       <Skill />
       <Dot />
