@@ -21,7 +21,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative h-[100vh] w-full bg-gradient-to-r from-[#252426] to-[#383838] text-white flex flex-col justify-center items-center">
+    <div className="h-[100dvh] w-full bg-gradient-to-r from-[#252426] to-[#383838] text-white flex flex-col justify-center items-center">
       <Waves 
         waveSpeedX={0.02}
         waveSpeedY={0.01}
@@ -47,7 +47,7 @@ const Hero = () => {
           <div ref={containerRef} style={{position: 'relative'}}>
             <VariableProximity
               label={'A Passionate B.Tech Final Year Student'}
-              className={'text-3xl md:text-2xl sm:text-2xl'}
+              className={'text-2xl md:text-1xl sm:text-2xl'}
               fromFontVariationSettings="'wght' 400, 'opsz' 9"
               toFontVariationSettings="'wght' 1000, 'opsz' 40"
               containerRef={containerRef}
@@ -58,7 +58,7 @@ const Hero = () => {
           <div ref={containerRef} style={{position: 'relative'}}>
             <VariableProximity
               label={'I specialize in creating engaging content, solving problems, and building efficient solutions.'}
-              className={'text-3xl md:text-2xl sm:text-2xl'}
+              className={'text-2xl md:text-1xl sm:text-2xl'}
               fromFontVariationSettings="'wght' 400, 'opsz' 9"
               toFontVariationSettings="'wght' 1000, 'opsz' 40"
               containerRef={containerRef}
@@ -76,7 +76,7 @@ const Hero = () => {
           />
         </div>
 
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-8 mt-0">
           <button 
             className="bg-[#6C733D] text-white py-2 px-6 rounded-full text-lg hover:bg-[#9DA65D] transition duration-300"
             onClick={scrollToContent}
