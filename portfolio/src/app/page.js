@@ -1,28 +1,23 @@
 "use client" 
 import dynamic from 'next/dynamic'; 
+import { useEffect, useState } from 'react';
  
 const Hero = dynamic(() => import('../components/hero'), {
-  loading: () => <LoadingFallback />,
   ssr:false,
 }); 
 const Projects = dynamic(() => import('../components/projects'), {
-  loading: () => <LoadingFallback />,
   ssr:false,
 });
 const Footer = dynamic(() => import('../components/footer'), {
-  loading: () => <LoadingFallback />,
   ssr:false,
 });
 const Dot = dynamic(() => import('../components/Dots'), {
-  loading: () => <LoadingFallback />,
   ssr:false,
 });
 const Contact = dynamic(() => import('../components/contact/contact'), {
-  loading: () => <LoadingFallback />,
   ssr:false,
 });
 const Skill = dynamic(() => import('../components/skill'), {
-  loading: () => <LoadingFallback />,
   ssr:false,
 });
  
@@ -33,6 +28,15 @@ const LoadingFallback = () => (
 );
 
 export default function Home() {
+  const [loading, setLoading]  = useState(true);
+  useEffect(()=>{
+    const timer = setTimeout(()=>setLoading(false),3000);
+    return ()=>clearTimeout(timer);
+  },[])
+  if(loading){
+    return <LoadingFallback className="flex justify-center items-center min-h-screen "/>;
+  }
+
   return (
     <div className='flex items-center flex-col'> 
       <Hero /> 
