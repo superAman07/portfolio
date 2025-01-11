@@ -34,11 +34,11 @@ export default function Home() {
     return ()=>clearTimeout(timer);
   },[])
   if(loading){
-    return <LoadingFallback className="flex justify-center items-center min-h-screen "/>;
+    return <LoadingFallback className="flex justify-center items-center h-screen "/>;
   }
 
   return (
-    <div className='flex items-center flex-col'> 
+    <div className='flex items-center flex-col overflow-x-hidden'> 
       <Hero /> 
       <Dot />
       <Skill />
