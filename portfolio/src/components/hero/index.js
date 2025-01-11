@@ -4,11 +4,12 @@ import Navbar from "../navbar/index.js";
 import Image from "next/image";
 import ProfilePic from "../../../public/image.png"; 
 import Waves from "../wave/wave.js";
-import BlurText from "../blurText/index.js";
+import BlurText from "../blurText/index.js"; 
 import VariableProximity from "../hoverMe/index.js";
- 
+
 
 const Hero = () => { 
+  const containerRef = useRef(null);
   const containerRef1 = useRef(null);
   const containerRef2 = useRef(null);
   const scrollToContent = () => {
@@ -95,34 +96,6 @@ const Hero = () => {
           Scroll down to see more
         </p>
       </div>
-
-      <style jsx>{`
-        .circles {
-          position: relative;
-          width: 100%;
-          height: 100%;
-        }
-
-        .circle {
-          position: absolute;
-          list-style: none;
-          background: rgba(255, 255, 255, 0.2);
-          animation: animate 25s linear infinite;
-          bottom: -150px;
-          border-radius: 50%;
-        }
-
-        @keyframes animate {
-          0% {
-            transform: translateY(0) rotate(0deg);
-            opacity: 1;
-          }
-          100% {
-            transform: translateY(-1000px) rotate(720deg);
-            opacity: 0;
-          }
-        }
-      `}</style>
     </div>
   );
 };

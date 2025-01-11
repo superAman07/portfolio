@@ -1,5 +1,6 @@
 import { forwardRef, useMemo, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import "./VariableProximity.css";
 
 function useAnimationFrame(callback) {
   useEffect(() => {
@@ -137,19 +138,15 @@ const VariableProximity = forwardRef((props, ref) => {
   return (
     <span
       ref={ref}
+      className={`${className} variable-proximity`}
       onClick={onClick}
-      style={{
-        display: "inline",
-        fontFamily: '"Roboto Flex", sans-serif',
-        ...style,
-      }}
-      className={className}
+      style={{ display: "inline", ...style }}
       {...restProps}
     >
       {words.map((word, wordIndex) => (
         <span
           key={wordIndex}
-          className="inline-block whitespace-nowrap"
+          style={{ display: "inline-block", whiteSpace: "nowrap" }}
         >
           {word.split("").map((letter) => {
             const currentLetterIndex = letterIndex++;
@@ -169,7 +166,7 @@ const VariableProximity = forwardRef((props, ref) => {
             );
           })}
           {wordIndex < words.length - 1 && (
-            <span className="inline-block">&nbsp;</span>
+            <span style={{ display: "inline-block" }}>&nbsp;</span>
           )}
         </span>
       ))}
