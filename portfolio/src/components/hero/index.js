@@ -24,7 +24,7 @@ const Hero = () => {
 
   return (
     <div className="h-[100dvh] w-full bg-gradient-to-r from-[#252426] to-[#383838] text-white flex flex-col justify-center items-center">
-      <Waves 
+      {/* <Waves 
         waveSpeedX={0.02}
         waveSpeedY={0.01}
         waveAmpX={40}
@@ -34,7 +34,16 @@ const Hero = () => {
         maxCursorMove={120}
         xGap={12}
         yGap={36}
-      />
+      /> */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+        <ul className="circles"> 
+          <li className="circle circle-1" style={{ left: "10%", width: "15px", height: "15px", animationDuration: "25s" }}></li>
+          <li className="circle circle-2" style={{ left: "20%", width: "20px", height: "20px", animationDuration: "20s" }}></li>
+          <li className="circle circle-3" style={{ left: "30%", width: "25px", height: "25px", animationDuration: "30s" }}></li>
+          <li className="circle circle-4" style={{ left: "40%", width: "10px", height: "10px", animationDuration: "35s" }}></li>
+          <li className="circle circle-5" style={{ left: "50%", width: "18px", height: "18px", animationDuration: "40s" }}></li>
+        </ul>
+      </div>
       <Navbar />
       <div className="container relative top-20 mx-auto text-center md:text-center sm:text-center z-10 px-6">
           <div className="flex justify-center text-center  md:text-6xl font-bold text-[#D9D9D9]">
@@ -96,6 +105,33 @@ const Hero = () => {
           Scroll down to see more
         </p>
       </div>
+      <style jsx>{`
+        .circles {
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+
+        .circle {
+          position: absolute;
+          list-style: none;
+          background: rgba(255, 255, 255, 0.2);
+          animation: animate 25s linear infinite;
+          bottom: -150px;
+          border-radius: 50%;
+        }
+
+        @keyframes animate {
+          0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(-1000px) rotate(720deg);
+            opacity: 0;
+          }
+        }
+      `}</style>
     </div>
   );
 };
