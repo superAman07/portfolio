@@ -21,7 +21,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative h-[100dvh] w-full bg-gradient-to-r from-[#252426] to-[#383838] text-white flex flex-col justify-center items-center">
+    <div className="relative h-[100vh] w-full bg-gradient-to-r from-[#252426] to-[#383838] text-white flex flex-col justify-center items-center">
       <Waves 
         waveSpeedX={0.02}
         waveSpeedY={0.01}
