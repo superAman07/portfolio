@@ -6,10 +6,11 @@ import ProfilePic from "../../../public/image.png";
 import Waves from "../wave/wave.js";
 import BlurText from "../blurText/index.js";
 import VariableProximity from "../hoverMe/index.js";
+ 
 
-
-const Hero = () => {
-  const containerRef = useRef(null);
+const Hero = () => { 
+  const containerRef1 = useRef(null);
+  const containerRef2 = useRef(null);
   const scrollToContent = () => {
     if (typeof window !== "undefined") {  
       const bottomOfViewport = window.innerHeight;
@@ -44,24 +45,24 @@ const Hero = () => {
             className="text-4xl mb-8 "        
             />
           </div>
-          <div ref={containerRef} style={{position: 'relative'}}>
+          <div ref={containerRef1} style={{position: 'relative'}}>
             <VariableProximity
               label={'A Passionate B.Tech Final Year Student'}
               className={'text-2xl md:text-1xl sm:text-2xl'}
               fromFontVariationSettings="'wght' 400, 'opsz' 9"
               toFontVariationSettings="'wght' 1000, 'opsz' 40"
-              containerRef={containerRef}
+              containerRef={containerRef1}
               radius={100}
               falloff='linear'
             />
           </div>
-          <div ref={containerRef} style={{position: 'relative'}}>
+          <div ref={containerRef2} style={{position: 'relative'}}>
             <VariableProximity
-              label={'I specialize in creating engaging content, solving problems, and building efficient solutions.'}
+              label='I specialize in creating engaging content, solving problems, and building efficient solutions.'
               className={'text-2xl md:text-1xl sm:text-2xl'}
               fromFontVariationSettings="'wght' 400, 'opsz' 9"
               toFontVariationSettings="'wght' 1000, 'opsz' 40"
-              containerRef={containerRef}
+              containerRef={containerRef2}
               radius={100}
               falloff='linear'
             />

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Button from "../button/button";
 import { motion } from "framer-motion";
+import SplashCursor from "../splashCursor";
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -30,6 +31,7 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             className="min-h-screen w-full flex flex-col justify-center items-center bg-gray-100 p-6"
         >
+            <SplashCursor/>
             <div className="container mx-auto justify-center flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden">
              
                 <motion.div
