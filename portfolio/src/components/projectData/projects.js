@@ -20,7 +20,7 @@ const projects = [
       Backend: Node.js, Express.js, Groq SDK
       Deployment: Vercel
       Environment Management: dotenv.`,
-      previewUrl: "web-weaver-chi.vercel.app",  
+      previewUrl: "https://web-weaver-chi.vercel.app/",  
       githubUrl: "https://github.com/superAman07/WebWeaver",  
     },
     {
