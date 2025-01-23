@@ -11,7 +11,7 @@ const Project = () => {
                 {projects.map((project, index) => (
                     <div 
                         key={project.id} 
-                        className={`bg-[#252426] rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl delay-${index * 100}`}
+                        className="bg-[#252426] rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
                     >
                         <div className="relative group">
                             <Image 
