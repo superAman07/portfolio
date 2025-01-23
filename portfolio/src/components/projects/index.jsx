@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import projects from "../projectData/projects";
+import projects from "../projectData/projects"; 
 import Image from "next/image";
 
 const Project = () => {
