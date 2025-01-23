@@ -11,7 +11,7 @@ const Project = () => {
                 {projects.map((project, index) => (
                     <div 
                         key={project.id} 
-                        className="bg-[#252426] rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                        className={`bg-[#252426] rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl delay-${index * 100}`}
                     >
                         <div className="relative group">
                             <Image 
@@ -20,6 +20,7 @@ const Project = () => {
                                 className="rounded-t-lg object-cover w-full h-48 sm:h-56 md:h-64 lg:h-72" 
                                 width={600} 
                                 height={400} 
+                                loading="lazy"
                             />
                             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                                 <div className="flex flex-row space-x-4">
