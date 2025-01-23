@@ -59,7 +59,7 @@ const Footer = () => {
       <div className="relative z-10 container mx-auto px-6 lg:px-8 flex flex-col items-center">
         <div className="text-center">
           <p className="text-sm text-[#A6A6A6] mb-2">All rights reserved &copy; 2024.</p>
-          <p className="text-xs text-[#A6A6A6]">Designed and Developed by superAman using NextJS and Tailwind {emoji}</p>
+          <p className="text-xs text-[#A6A6A6]">Designed and Developed by Aman Vishwakarma using NextJS and Tailwind {emoji}</p>
         </div>
       </div>
     </footer>
