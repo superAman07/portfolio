@@ -4,7 +4,7 @@ import investmentCalc from "./images/investmentCalc.png";
 import todo from "./images/todo.png"; 
 import filterSystem from "./images/filterSystem.png"; 
 import portfolio from "./images/portfolio.png"; 
-import pglife from "./images/pglife.png";
+import mediumBlog from "./images/medium-blog.png";
 import paytmClone from "./images/paytmClone.png";
 import weatherapp from "./images/weather.png";
 import webweaver from "./images/webweaver.png";
@@ -41,11 +41,11 @@ const projects = [
     },
     {
       id: 3,
-      title: "PGLife",
-      imageUrl: pglife,
-      description: "PG Life is a dynamic web application for discovering and managing paying guest (PG) accommodations. Users can search for PGs by city, view detailed property listings with ratings, and manage their favorite properties. The platform features secure user authentication and displays testimonials from previous residents. Built with PHP and MySQL for the backend, and HTML, CSS, and Bootstrap for the frontend, PG Life offers a user-friendly experience for managing and exploring PG options.",
-      previewUrl: "http://pglife-project.free.nf/",  
-      githubUrl: "http://pglife-project.free.nf/",  
+      title: "Medium Blog",
+      imageUrl: mediumBlog,
+      description: "Medium Blog Clone is a responsive web application that replicates the core functionalities of the Medium blogging platform. Users can explore blogs, read articles, and publish their own content seamlessly. The project features a modular architecture, with a shared `common` folder utilized for both frontend and backend code. Built with React for the frontend and Cloudflare for the serverless backend, the application ensures scalability and efficiency. This project provides an intuitive user interface and dynamic functionality, offering a clean and simple experience for exploring and publishing blogs.",
+      previewUrl: "https://medium-blog-eosin-tau.vercel.app/",  
+      githubUrl: "https://github.com/superAman07/medium-blog",  
     },
     {
       id: 4,
