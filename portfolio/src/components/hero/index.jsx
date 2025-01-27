@@ -25,17 +25,7 @@ const Hero = () => {
 
   return (
     <div className="h-[100dvh] w-full bg-gradient-to-r from-[#252426] to-[#383838] text-white flex flex-col justify-center items-center">
-      {/* <Waves 
-        waveSpeedX={0.02}
-        waveSpeedY={0.01}
-        waveAmpX={40}
-        waveAmpY={20}
-        friction={0.9}
-        tension={0.01}
-        maxCursorMove={120}
-        xGap={12}
-        yGap={36}
-      /> */}
+       
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <ul className="circles"> 
           <li className="circle circle-1" style={{ left: "10%", width: "15px", height: "15px", animationDuration: "25s" }}></li>
@@ -47,6 +37,7 @@ const Hero = () => {
       </div>
       <Navbar />
       <div className="container relative top-20 mx-auto text-center md:text-center sm:text-center z-10 px-6">
+        <div>
           <div className="flex justify-center text-center  md:text-6xl font-bold text-[#D9D9D9]">
             <BlurText
             text="Hello, I&apos;m Aman"
@@ -78,22 +69,16 @@ const Hero = () => {
               falloff='linear'
             />
           </div>
+        </div>
 
-        <div className="flex justify-center mt-3 mb-8 pb-5">
+        <div className="flex justify-center mt-20 ">
           <Image
-            src={ProfilePic}
+            src="/images/aman.jpg"
+            width={600}
+            height={600}
             alt="Aman Vishwakarma"
             className="rounded-full w-48 h-48 object-cover border-4 border-white transform hover:scale-110 transition-transform duration-500"
           />
-        </div>
-
-        <div className="flex justify-center mb-8 mt-0">
-          <button 
-            className="bg-[#6C733D] text-white py-2 px-6 rounded-full text-lg hover:bg-[#9DA65D] transition duration-300"
-            onClick={scrollToContent}
-          >
-            Explore My Work
-          </button>
         </div>
       </div>
 
