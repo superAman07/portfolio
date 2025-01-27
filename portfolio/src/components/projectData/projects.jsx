@@ -1,14 +1,4 @@
 'use client'
-// import barknbond from "/images/barknbond.png";
-// import investmentCalc from "/images/investmentCalc.png"; 
-// import todo from "/images/todo.png"; 
-// import filterSystem from "/images/filterSystem.png"; 
-// import portfolio from "/images/portfolio.png"; 
-// import mediumBlog from "/images/medium-blog.png";
-// import paytmClone from "/images/paytmClone.png";
-// import weatherapp from "/images/weather.png";
-// import webweaver from "/images/webweaver.png";
-
 const projects = [
     {
       id: 0,
