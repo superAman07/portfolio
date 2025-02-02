@@ -49,8 +49,8 @@ const Hero = () => {
           </div>
           <div ref={containerRef1} style={{position: 'relative'}}>
             <VariableProximity
-              label={'A Passionate B.Tech Final Year Student'}
-              className={'text-2xl md:text-1xl sm:text-2xl'}
+              label={'A Driven Technology Enthusiast and Engineering Graduate'}
+              className={'text-2xl text-[#D9D9D9] md:text-1xl sm:text-2xl'}
               fromFontVariationSettings="'wght' 400, 'opsz' 9"
               toFontVariationSettings="'wght' 1000, 'opsz' 40"
               containerRef={containerRef1}
@@ -61,7 +61,7 @@ const Hero = () => {
           <div ref={containerRef2} style={{position: 'relative'}}>
             <VariableProximity
               label='I specialize in creating engaging content, solving problems, and building efficient solutions.'
-              className={'text-2xl md:text-1xl sm:text-2xl'}
+              className={'text-2xl text-[#D9D9D9] md:text-1xl sm:text-2xl'}
               fromFontVariationSettings="'wght' 400, 'opsz' 9"
               toFontVariationSettings="'wght' 1000, 'opsz' 40"
               containerRef={containerRef2}
