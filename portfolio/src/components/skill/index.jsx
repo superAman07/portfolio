@@ -12,7 +12,7 @@ const Skills = () => {
     { name: "DSA", level: "Advanced", icon: "https://cdn.iconscout.com/icon/premium/png-256-thumb/data-structure-15-983190.png?f=webp", percentage: 95 },
     { name: "React", level: "Advanced", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", percentage: 80 },
     { name: "Next.js", level: "Intermediate", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg", percentage: 80 },
-    { name: "Turborepo", level: "Intermediate", icon: "https://raw.githubusercontent.com/turbo/brand/main/logo.svg", percentage: 75 }, 
+    { name: "Turborepo", level: "Intermediate", icon: "https://turbo.build/images/docs/repo/repo-hero-logo-dark.svg", percentage: 75 }, 
     { name: "Node.js", level: "Intermediate", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg", percentage: 70 },
     { name: "TypeScript", level: "Intermediate", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg", percentage: 70 },
     { name: "JavaScript", level: "Intermediate", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", percentage: 70 },
