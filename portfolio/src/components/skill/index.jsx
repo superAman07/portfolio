@@ -1,10 +1,6 @@
 'use client';
 import React, { useEffect, useRef, memo } from "react";
 
-
-
- 
-
 const Skills = () => {
   const skills = [
     { name: "C++", level: "Advanced", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg", percentage: 95 },
