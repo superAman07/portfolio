@@ -25,9 +25,9 @@ const projects = [
       id: 2,
       title: "Portfolio",
       imageUrl: "/images/portfolio.png",
-      description: "My portfolio, created using Next.js and Tailwind CSS, showcases a blend of modern frontend technologies. It offers a responsive design, smooth navigation, and detailed project displays with preview options. Powered by Next.js for efficient rendering and Tailwind CSS for sleek styling, it highlights my skills in web development and design innovation.",
-      previewUrl: "https://aman-vishwakarma.vercel.app/",  
-      githubUrl: "https://github.com/superAman07/portfolio"
+      description: "This portfolio website for a YouTuber, created using React.js and Tailwind CSS, showcases a blend of modern frontend technologies. It offers a responsive design, smooth navigation, and detailed project displays with preview options. Powered by React.js for efficient rendering and Tailwind CSS for sleek styling, it highlights my skills in web development and design innovation.",
+      previewUrl: "https://anonymous-anurag-portfolio.vercel.app/",  
+      githubUrl: "https://github.com/superAman07/AnuragAnonymousPortfolio"
     },
     {
       id: 3,
