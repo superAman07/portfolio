@@ -70,6 +70,7 @@ const Hero = () => {
               falloff='linear'
             />
           </div>
+          
         </div>
 
         <div className="flex justify-center mt-20 ">

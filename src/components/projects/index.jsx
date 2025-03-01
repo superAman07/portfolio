@@ -52,8 +52,7 @@ const Project = () => {
                         <div className="p-4 text-[#D9D9D9]">
                             <h3 className="text-xl font-bold mb-2 text-[#9DA65D]">{project.title}</h3>
                             <p className="text-sm text-[#A6A6A6]">{project.description}</p>
-                        </div>
-                        {/* Button for small devices */}
+                        </div> 
                         <div className="flex justify-center md:hidden mt-4 space-x-4">
                             <a href={project.previewUrl} target="_blank" rel="noopener noreferrer">
                                 <button className="bg-[#252426] text-[#D9D9D9] py-2 px-4 rounded hover:bg-[#6C733D] transition-transform duration-300 transform hover:translate-y-[-2px]">
