@@ -34,3 +34,25 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+/portfolio
+│-- /src
+│   │-- /app                ✅ (App Router root)
+│   │   ├── layout.jsx      ✅ (Wraps all pages, should include `<Suspense>`)
+│   │   ├── page.jsx        ✅ (Main homepage)
+│   │   ├── loading.jsx     ✅ (Global loading UI, automatically used by Next.js)
+│   │-- /components         ✅ (Folder for reusable components)
+│   │   ├── hero.jsx
+│   │   ├── projects.jsx
+│   │   ├── footer.jsx
+│   │   ├── skill.jsx
+│   │   ├── Dots.jsx
+│   │   ├── contact/
+│   │   │   ├── contact.jsx
+│-- /public                 ✅ (Static assets like images)
+│-- package.json
+│-- next.config.js
+│-- .gitignore
+│-- README.md

@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import ProfilePic from "../../../public/image.png";  
 import dynamic from 'next/dynamic'; 
+import Dot from "../Dots";
 const Navbar = dynamic(() => import("../navbar/index.jsx"), { ssr: false });
 const Waves = dynamic(() => import("../wave/wave.js"), { ssr: false });
 const BlurText = dynamic(() => import("../blurText/index.jsx"), { ssr: false });
