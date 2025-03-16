@@ -9,7 +9,7 @@ const ParticlesBackground = () => {
   };
 
   return (
-    <div className=" inset-0 h-full w-full z-1">
+    <div className="inset-0 h-full w-full z-1">
       <Particles
         id="tsparticles"
         init={particlesInit}

@@ -24,7 +24,7 @@ const Hero = () => {
 
   return (
     <div className="relative h-[100dvh] w-full bg-gradient-to-r from-[#252426] to-[#383838] text-white flex flex-col justify-center items-center">
-      <div className="absolute h-full">
+      <div className="absolute">
         <ParticlesBackground />
       </div>
       <Navbar />
