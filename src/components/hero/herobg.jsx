@@ -2,6 +2,9 @@
 import React from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
+import dynamic from "next/dynamic";
+
+const Particles = dynamic(() => import("react-tsparticles"), { ssr: false });
 
 const ParticlesBackground = () => {
   const particlesInit = async (engine) => {
