@@ -1,17 +1,13 @@
 'use client';
 import React, { useRef } from "react"; 
-import Image from "next/image";
-import ProfilePic from "../../../public/image.png";  
-import dynamic from 'next/dynamic'; 
-import Dot from "../Dots";
-const Navbar = dynamic(() => import("../navbar/index.jsx"), { ssr: false });
-const Waves = dynamic(() => import("../wave/wave.js"), { ssr: false });
+import Image from "next/image"; 
+import dynamic from 'next/dynamic';  
+const Navbar = dynamic(() => import("../navbar/index.jsx"), { ssr: false }); 
 const BlurText = dynamic(() => import("../blurText/index.jsx"), { ssr: false });
 const VariableProximity = dynamic(() => import("../hoverMe/index.jsx"), { ssr: false });
 
 
-const Hero = () => { 
-  const containerRef = useRef(null);
+const Hero = () => {  
   const containerRef1 = useRef(null);
   const containerRef2 = useRef(null);
   const scrollToContent = () => {
@@ -26,7 +22,7 @@ const Hero = () => {
 
   return (
     <div className="h-[100dvh] w-full bg-gradient-to-r from-[#252426] to-[#383838] text-white flex flex-col justify-center items-center">
-       
+      
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <ul className="circles"> 
           <li className="circle circle-1" style={{ left: "10%", width: "15px", height: "15px", animationDuration: "25s" }}></li>
