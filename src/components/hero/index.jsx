@@ -2,9 +2,11 @@
 import React, { useRef } from "react"; 
 import Image from "next/image"; 
 import dynamic from 'next/dynamic';  
+
 const Navbar = dynamic(() => import("../navbar/index.jsx"), { ssr: false }); 
 const BlurText = dynamic(() => import("../blurText/index.jsx"), { ssr: false });
 const VariableProximity = dynamic(() => import("../hoverMe/index.jsx"), { ssr: false });
+const ParticlesBackground = dynamic(()=>import("./herobg.jsx"),{ssr:false});
 
 
 const Hero = () => {  
@@ -21,16 +23,9 @@ const Hero = () => {
   };
 
   return (
-    <div className="h-[100dvh] w-full bg-gradient-to-r from-[#252426] to-[#383838] text-white flex flex-col justify-center items-center">
-      
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-        <ul className="circles"> 
-          <li className="circle circle-1" style={{ left: "10%", width: "15px", height: "15px", animationDuration: "25s" }}></li>
-          <li className="circle circle-2" style={{ left: "20%", width: "20px", height: "20px", animationDuration: "20s" }}></li>
-          <li className="circle circle-3" style={{ left: "30%", width: "25px", height: "25px", animationDuration: "30s" }}></li>
-          <li className="circle circle-4" style={{ left: "40%", width: "10px", height: "10px", animationDuration: "35s" }}></li>
-          <li className="circle circle-5" style={{ left: "50%", width: "18px", height: "18px", animationDuration: "40s" }}></li>
-        </ul>
+    <div className="relative h-[100dvh] w-full bg-gradient-to-r from-[#252426] to-[#383838] text-white flex flex-col justify-center items-center">
+      <div className="absolute h-full">
+        <ParticlesBackground />
       </div>
       <Navbar />
       <div className="container relative top-20 mx-auto text-center md:text-center sm:text-center z-10 px-6">

@@ -10,7 +10,7 @@ const Skill =  dynamic(() => import('../components/skill'));
 export default async function Home() {
   await new Promise((resolve)=>setTimeout(resolve,2000))
   return (
-    <div className="flex items-center flex-col overflow-x-hidden">
+    <div className="relative flex items-center flex-col overflow-x-hidden">
       <Hero />
       <Dot />
       <Skill />
