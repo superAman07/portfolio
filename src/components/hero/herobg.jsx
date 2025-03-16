@@ -1,6 +1,5 @@
 "use client";
-import React from "react";
-import Particles from "react-tsparticles";
+import React from "react"; 
 import { loadSlim } from "tsparticles-slim";
 import dynamic from "next/dynamic";
 
@@ -53,37 +52,39 @@ const ParticlesBackground = () => {
             move: {
               enable: true,
               speed: 2,
-              direction: "none",
-              random: false,
-              straight: false,
               outModes: "out",
-              attract: {
-                enable: true,
-                rotateX: 600,
-                rotateY: 1200,
-              },
             },
           },
           interactivity: {
             events: {
               onHover: {
                 enable: true,
-                mode: "grab",
+                mode: ["grab", "attract"],
               },
               onClick: {
                 enable: true,
-                mode: "push",
+                mode: ["repulse", "explode"],  
               },
             },
             modes: {
               grab: {
-                distance: 200,
-                lineLinked: {
-                  opacity: 0.6,
+                distance: 250,
+                links: {
+                  opacity: 0.8,
                 },
               },
-              push: {
-                quantity: 4,
+              attract: {
+                distance: 200,
+                duration: 0.4,
+                factor: 5,
+              },
+              repulse: { 
+                distance: 300,
+                duration: 0.6,
+              },
+              explode: {  
+                speed: 10,
+                size: 6,
               },
             },
           },
