@@ -1,5 +1,7 @@
 'use client';
 import React, { useEffect, useRef, memo } from "react";
+import Atropos from "atropos/react";
+import "atropos/css";
 
 const Skills = () => {
   const skills = [
@@ -89,30 +91,48 @@ const Skills = () => {
             }
           `}</style>
           {skills.map((skill, index) => (
-            // <SkillItem
+            // <div
             //   key={index}
-            //   skill={skill}
-            //   addToRefs={addToRefs}
-            // />
-            <div
-              key={index}
-              className="skill-item flex flex-col items-center justify-center text-center"
-            >
+            //   className="skill-item flex flex-col items-center justify-center text-center"
+            // >
+            //   <div className="animate-bounce">
+            //     <img src={skill.icon} alt={`${skill.name} icon`} className="h-16 w-16 mb-4" />
+            //   </div>
+            //   <h3 className="text-2xl font-semibold mt-4">{skill.name}</h3>
+            //   <p className="text-gray-400 mb-4">{skill.level}</p>
+            //   <div className="w-full bg-[#094A73] rounded-full h-4 overflow-hidden mb-4">
+            //     <div
+            //       ref={addToRefs}
+            //       className="bg-blue-500 h-full rounded-full transition-width duration-1000 ease-in-out"
+            //       style={{ width: '0%' }}
+            //       data-width={skill.percentage}
+            //     ></div>
+            //   </div>
+            //   <p className="text-gray-400">{skill.percentage}%</p>
+            // </div>
+            <Atropos key={index} highlight={false} shadowScale={1.05} rotateXMax={10} rotateYMax={10}>
+            <div className="skill-item flex flex-col items-center justify-center text-center">
               <div className="animate-bounce">
-                <img src={skill.icon} alt={`${skill.name} icon`} className="h-16 w-16 mb-4" />
+                <img
+                  src={skill.icon}
+                  alt={`${skill.name} icon`}
+                  className="h-16 w-16 mb-4"
+                  data-atropos-offset="5"
+                />
               </div>
-              <h3 className="text-2xl font-semibold mt-4">{skill.name}</h3>
+              <h3 className="text-2xl font-semibold mt-4" data-atropos-offset="8">{skill.name}</h3>
               <p className="text-gray-400 mb-4">{skill.level}</p>
               <div className="w-full bg-[#094A73] rounded-full h-4 overflow-hidden mb-4">
                 <div
                   ref={addToRefs}
                   className="bg-blue-500 h-full rounded-full transition-width duration-1000 ease-in-out"
-                  style={{ width: '0%' }}
+                  style={{ width: "0%" }}
                   data-width={skill.percentage}
                 ></div>
               </div>
               <p className="text-gray-400">{skill.percentage}%</p>
             </div>
+          </Atropos>
           ))}
         </div>
       </div>
